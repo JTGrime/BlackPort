@@ -1,0 +1,1 @@
+C:\Users\JamesTony\Documents\Microsoft-Certification\70-480_projects\Repository\Blackport.Repository.Test\obj\Debug\Blackport.Repository.Test.csprojResolveAssemblyReference.cache

@@ -1,0 +1,1 @@
+C:\Users\JamesTony\Documents\Microsoft-Certification\70-480_projects\Repository\Blackport.Model\obj\Debug\Blackport.ORM.Model.csprojResolveAssemblyReference.cache
