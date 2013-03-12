@@ -9,3 +9,14 @@ C:\Users\JamesTony\Documents\Microsoft-Certification\70-480_projects\Repository\
 C:\Users\JamesTony\Documents\Microsoft-Certification\70-480_projects\Repository\Blackport.Infrastructure\obj\Debug\Blackport.Infrastructure.csprojResolveAssemblyReference.cache
 C:\Users\JamesTony\Documents\Microsoft-Certification\70-480_projects\Repository\Blackport.Infrastructure\obj\Debug\Blackport.Infrastructure.dll
 C:\Users\JamesTony\Documents\Microsoft-Certification\70-480_projects\Repository\Blackport.Infrastructure\obj\Debug\Blackport.Infrastructure.pdb
+C:\SourceControl\Git\BlackPort\Blackport.Infrastructure\bin\Debug\Blackport.Infrastructure.dll.config
+C:\SourceControl\Git\BlackPort\Blackport.Infrastructure\bin\Debug\Blackport.Infrastructure.dll
+C:\SourceControl\Git\BlackPort\Blackport.Infrastructure\bin\Debug\Blackport.Infrastructure.pdb
+C:\SourceControl\Git\BlackPort\Blackport.Infrastructure\bin\Debug\EntityFramework.dll
+C:\SourceControl\Git\BlackPort\Blackport.Infrastructure\bin\Debug\StructureMap.dll
+C:\SourceControl\Git\BlackPort\Blackport.Infrastructure\bin\Debug\EntityFramework.xml
+C:\SourceControl\Git\BlackPort\Blackport.Infrastructure\bin\Debug\StructureMap.pdb
+C:\SourceControl\Git\BlackPort\Blackport.Infrastructure\bin\Debug\StructureMap.xml
+C:\SourceControl\Git\BlackPort\Blackport.Infrastructure\obj\Debug\Blackport.Infrastructure.csprojResolveAssemblyReference.cache
+C:\SourceControl\Git\BlackPort\Blackport.Infrastructure\obj\Debug\Blackport.Infrastructure.dll
+C:\SourceControl\Git\BlackPort\Blackport.Infrastructure\obj\Debug\Blackport.Infrastructure.pdb
