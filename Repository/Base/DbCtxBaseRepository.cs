@@ -3,92 +3,93 @@ using Repository.Base.API;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Repository.Base
 {
-    public sealed class DbCtxBaseRepository<T,C> : BaseRepository<T,C>, IDbCtxBaseRepository<T,C>
-    where T : class, new()
-    where C : DbContext, new()
-    {
-        private C _dbCtx;
-        public C DataContext 
-        {
-            get
-            {
-                return _dbCtx;
-            }
-        }
+	public sealed class DbCtxBaseRepository<TType, TCtx> : BaseRepository<TType, TCtx>, IDbCtxBaseRepository<TType, TCtx>
+		where TType : class, new()
+		where TCtx : DbContext, new()
+	{
+		private readonly TCtx _dbCtx;
+		public TCtx DataContext
+		{
+			get
+			{
+				return _dbCtx;
+			}
+		}
 
-        public DbCtxBaseRepository()
-        {
-            _dbCtx = new C();
-        }
+		public DbCtxBaseRepository()
+		{
+			_dbCtx = new TCtx();
+		}
 
-        public override sealed bool IBaseRepository<T, C>.Create(IEnumerable<T> TSet)
-        {
-            IDbSet<T>       _dbSet  = _dbCtx.Set<T>();
-            IEnumerable<T>  _tSet   = TSet;
-            bool            _result = true;
+		public override bool Create(IEnumerable<TType> set)
+		{
+			IDbSet<TType> dbSet = _dbCtx.Set<TType>();
+			IEnumerable<TType> tSet = set;
+			bool result = true;
 
-            foreach (T _TEntity in _tSet)
-            {
-                if (!((_dbSet.Add(_TEntity)).Equals(_TEntity)))
-                {
-                    _result = false;
-                }
-                AmmendEntityState(_TEntity, System.Data.EntityState.Added);
-            }
-            return _result;
-        }
+			foreach (TType entity in tSet)
+			{
+				if (!((dbSet.Add(entity)).Equals(entity)))
+				{
+					result = false;
+				}
+				AmmendEntityState(entity, System.Data.EntityState.Added);
+			}
+			return result;
+		}
 
-        public override sealed IEnumerable<T> IBaseRepository<T, C>.Read(Func<T, bool> predicate)
-        {
-            return _dbCtx.Set<T>().Where<T>(predicate) as IEnumerable<T>;
-        }
+		public override IEnumerable<TType> Read(Func<TType, bool> predicate)
+		{
+			return _dbCtx.Set<TType>().Where<TType>(predicate) as IEnumerable<TType>;
+		}
 
-        public override sealed bool IBaseRepository<T, C>.Update(IEnumerable<T> tSet)
-        {
-            IEnumerable<T>  _tSet   = tSet;
-            bool            _result = true;
+		public override bool Update(IEnumerable<TType> set)
+		{
+			IEnumerable<TType> tSet = set;
+			bool result = true;
 
-            foreach(T _TEntity in _tSet)
-            {
-                if (!(_dbCtx.Set<T>().Attach(_TEntity).Equals(_TEntity)))
-                {
-                    _result = false;
-                }
-                AmmendEntityState(_TEntity, System.Data.EntityState.Modified);
-            }
-            return _result;
-        }
+			foreach (TType entity in tSet)
+			{
+				if (!(_dbCtx.Set<TType>().Attach(entity).Equals(entity)))
+				{
+					result = false;
+				}
+				AmmendEntityState(entity, System.Data.EntityState.Modified);
+			}
+			return result;
+		}
 
-        public override sealed bool IBaseRepository<T, C>.Delete(Func<T, bool> predicate)
-        {
-            IDbSet<T>   _set    = _dbCtx.Set<T>();
-            bool        _result = true;
+		public override bool Delete(Func<TType, bool> predicate)
+		{
+			IDbSet<TType> set = _dbCtx.Set<TType>();
+			bool result = true;
 
-            foreach(T _TEntity in _set.Where<T>(predicate))
-            {
-                if(!(_set.Remove(_TEntity).Equals(_TEntity)))
-                {
-                    _result = false;
-                }
-                AmmendEntityState(_TEntity, System.Data.EntityState.Deleted);
-            }
-            return _result;
-        }
+			foreach (TType entity in set.Where<TType>(predicate))
+			{
+				if (!(set.Remove(entity).Equals(entity)))
+				{
+					result = false;
+				}
+				AmmendEntityState(entity, System.Data.EntityState.Deleted);
+			}
+			return result;
+		}
 
-        public override sealed bool IBaseRepository<T, C>.Save()
-        {
-            return _dbCtx.SaveChanges() > 0;
-        }
+		public override bool Save()
+		{
+			return _dbCtx.SaveChanges() > 0;
+		}
 
-        private void AmmendEntityState(T entity, System.Data.EntityState entityState)
-        {
-            _dbCtx.Entry<T>(entity).State = entityState;
-        }
-    }
-} 
+		private void AmmendEntityState(TType entity, System.Data.EntityState entityState)
+		{
+			_dbCtx.Entry<TType>(entity).State = entityState;
+		}
+	}
+}

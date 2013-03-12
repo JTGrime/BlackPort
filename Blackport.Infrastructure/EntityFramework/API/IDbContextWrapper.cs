@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Blackport.Infrastructure.EntityFramework.API
 {
-    public interface IObjectContextWrapper   
+    public interface IDbContextWrapper
     {
     }
 }

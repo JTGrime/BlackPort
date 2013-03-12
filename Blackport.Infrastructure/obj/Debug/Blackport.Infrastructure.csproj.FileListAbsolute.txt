@@ -17,6 +17,5 @@ C:\SourceControl\Git\BlackPort\Blackport.Infrastructure\bin\Debug\StructureMap.d
 C:\SourceControl\Git\BlackPort\Blackport.Infrastructure\bin\Debug\EntityFramework.xml
 C:\SourceControl\Git\BlackPort\Blackport.Infrastructure\bin\Debug\StructureMap.pdb
 C:\SourceControl\Git\BlackPort\Blackport.Infrastructure\bin\Debug\StructureMap.xml
-C:\SourceControl\Git\BlackPort\Blackport.Infrastructure\obj\Debug\Blackport.Infrastructure.csprojResolveAssemblyReference.cache
 C:\SourceControl\Git\BlackPort\Blackport.Infrastructure\obj\Debug\Blackport.Infrastructure.dll
 C:\SourceControl\Git\BlackPort\Blackport.Infrastructure\obj\Debug\Blackport.Infrastructure.pdb

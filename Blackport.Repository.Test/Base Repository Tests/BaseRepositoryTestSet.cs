@@ -1,38 +1,35 @@
 ﻿using System;
+using System.Data.Entity;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Blackport.DataLayer.Repositories.API;
 using Blackport.Infrastructure.EntityFramework.API;
 using Blackport.Repository.Test.Base_Repository_Tests.Test_Helpers.API;
 using System.Collections.Generic;
+using Blackport.Repository.Test.Base_Repository_Tests.Test_Helpers;
+using Blackport.Infrastructure.EntityFramework;
 
 namespace Blackport.Repository.Test
 {
     [TestClass]
-    public class BaseRepositoryTestSet
+    internal class BaseRepositoryTestSet
     {
         private IBaseRepositoryTStub _stub;
-        private IEnumerable<IBaseRepositoryTStub> _commandSet;
-        private IBaseRepository<IBaseRepositoryTStub, IObjectContextWrapper> _Repository;
+				private IBaseRepository<BaseRepositoryTStub, DbContextWrapper> _repository;
          
         [TestInitialize]
-        public void Setup(IBaseRepository<IBaseRepositoryTStub, IObjectContextWrapper> baseRepository,
+				public void Setup(IBaseRepository<BaseRepositoryTStub, DbContextWrapper> baseRepository,
                           IBaseRepositoryTStub stub)
         {
-            _Repository = baseRepository;
+						_repository = baseRepository;
             _stub = stub;
-
-            _commandSet = new List<IBaseRepositoryTStub>()
-            {
-                _stub
-            };
         }
 
         #region Create
         [TestMethod]
         public void BaseRepository_Create_AssertCreateCommandPersistsCommandSet()
         {
-            var result = _Repository.Create(_commandSet);
-            Assert.IsTrue(result);
+						//var result = _repository.Create();
+            //Assert.IsTrue(result);
         }
         #endregion
 

@@ -15,10 +15,10 @@ namespace Blackport.Repository.Test.Base_Repository_Tests.Test_Helpers
         private BaseRepositoryTStub _instance;
         private Func<int, int, int> _calculate;
         
-        private BaseRepositoryTStub()
+        public BaseRepositoryTStub()
         {
             _totalObjectCount++;
-            this._id = ++_totalObjectCount;
+            _id = ++_totalObjectCount;
         }
 
         public BaseRepositoryTStub Instance
@@ -37,9 +37,13 @@ namespace Blackport.Repository.Test.Base_Repository_Tests.Test_Helpers
             }
         }
 
-        public int Calculate(int x, int y, Func<int, int, int> func)
-        {
-            return func(x, y);
-        }
+				public int Calculate(Func<int, int, int> func = null, int x = 0, int y = 0)
+				{
+					if(func == null)
+					{
+							func = (xx, yy) => { return x + y; };
+					}
+					return func(x, y);
+				}
     }
 }

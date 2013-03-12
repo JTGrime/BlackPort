@@ -47,12 +47,10 @@
     <Compile Include="Base\API\IAggregate.cs" />
     <Compile Include="Base\API\IBaseRepository.cs" />
     <Compile Include="Base\API\IDbCtxBaseRepository.cs" />
-    <Compile Include="Base\API\IObjCtxBaseRepository.cs" />
     <Compile Include="Base\API\IUnitOfWork.cs" />
     <Compile Include="Base\API\IUnitOfWorkRepository.cs" />
     <Compile Include="Base\BaseRepository.cs" />
     <Compile Include="Base\DbCtxBaseRepository.cs" />
-    <Compile Include="Base\ObjCtxBaseRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitOfWorkRepository\UnitOfWork.cs" />
     <Compile Include="UnitOfWorkRepository\UnitOfWorkRepository.cs" />
