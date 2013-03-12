@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.0.10827\lib\NET40\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -60,10 +63,6 @@
       <Project>{1dd12afe-1fd6-485b-91e0-272818a53106}</Project>
       <Name>Blackport.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Blackport.Model\Blackport.ORM.Model.csproj">
-      <Project>{aafd6412-cfad-4214-b2d2-673e22f4d2cc}</Project>
-      <Name>Blackport.ORM.Model</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Repository\Blackport.Repository.csproj">
       <Project>{fbae260d-a078-4898-8b0f-64755c4e6df8}</Project>
       <Name>Blackport.Repository</Name>
@@ -71,6 +70,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Base Repository Tests\Mocks\DAL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

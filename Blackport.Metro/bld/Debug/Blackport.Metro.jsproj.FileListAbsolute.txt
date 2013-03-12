@@ -1,0 +1,13 @@
+C:\SourceControl\Git\BlackPort\Blackport.Metro\bin\Debug\resources.pri
+C:\SourceControl\Git\BlackPort\Blackport.Metro\bin\Debug\AppxManifest.xml
+C:\SourceControl\Git\BlackPort\Blackport.Metro\bin\Debug\Blackport.Metro.build.appxrecipe
+C:\SourceControl\Git\BlackPort\Blackport.Metro\bld\Debug\priconfig.xml.intermediate
+C:\SourceControl\Git\BlackPort\Blackport.Metro\bld\Debug\layout.resfiles.intermediate
+C:\SourceControl\Git\BlackPort\Blackport.Metro\bld\Debug\resources.resfiles.intermediate
+C:\SourceControl\Git\BlackPort\Blackport.Metro\bld\Debug\pri.resfiles.intermediate
+C:\SourceControl\Git\BlackPort\Blackport.Metro\bld\Debug\priconfig.xml
+C:\SourceControl\Git\BlackPort\Blackport.Metro\bld\Debug\layout.resfiles
+C:\SourceControl\Git\BlackPort\Blackport.Metro\bld\Debug\resources.resfiles
+C:\SourceControl\Git\BlackPort\Blackport.Metro\bld\Debug\pri.resfiles
+C:\SourceControl\Git\BlackPort\Blackport.Metro\bld\Debug\LanguageQualifiers.txt
+C:\SourceControl\Git\BlackPort\Blackport.Metro\bld\Debug\ProjectArchitectures.txt
