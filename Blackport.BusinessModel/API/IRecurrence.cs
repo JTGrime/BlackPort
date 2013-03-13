@@ -1,4 +1,4 @@
-﻿using Blackport.BusinessModel.API.ServiceAPI;
+﻿using Blackport.BusinessModel.API;
 using System;
 
 namespace Blackport.BusinessModel.API

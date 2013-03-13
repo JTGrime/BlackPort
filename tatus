@@ -1,0 +1,71 @@
+[33mcommit bc14ed101b29a179173a901eab9f7deca53c5ead[m
+Author: JTGrime <jtgrime@gmail.com>
+Date:   Wed Mar 13 11:57:56 2013 +0000
+
+    Adding anemic models to the model layer N.B. still to add methods and determine implementation as well as xml documentation, this is purly the acto of stubbing anemic types to begin writting unit tests.
+
+[33mcommit e69b6df82060e6beda335d83999abf531634d19f[m
+Author: JTGrime <jtgrime@gmail.com>
+Date:   Wed Mar 13 10:23:41 2013 +0000
+
+    Adding variousdomai models to the Blackport.Model layer, modesl are currently anemic unitl unit tests are written. Additionally added a stubbed DbContext and various infrastructure types.
+
+[33mcommit f9a927ab71c4c02b34d41018e0841a1ea2d81e4c[m
+Author: JTGrime <jtgrime@gmail.com>
+Date:   Tue Mar 12 22:55:02 2013 +0000
+
+    Fixing various build issues with the IDbCtxBaseRepository and DbContext test sets in Blackport.Test.Data.
+
+[33mcommit 0723e1cfcf4fb1fa37cab71a5324d66308b13684[m
+Author: JTGrime <jtgrime@gmail.com>
+Date:   Tue Mar 12 00:41:21 2013 +0000
+
+    Resolving naming issue and changing of project Blackport.Test.Web2 to Blackport.Test.Web.
+
+[33mcommit 7efdd11def7cd4878f26d99e07d52c79cb8bea93[m
+Author: JTGrime <jtgrime@gmail.com>
+Date:   Tue Mar 12 00:33:22 2013 +0000
+
+    Removing Database first EF Model project 'Blackport.ORM.Model', as I am taking a code first approach now.
+
+[33mcommit 4a06184fd66429945cc101594dc30cef5b04f4a9[m
+Author: JTGrime <jtgrime@gmail.com>
+Date:   Tue Mar 12 00:24:53 2013 +0000
+
+    Updating all installed packages.
+
+[33mcommit 9acfdb011135dcf17dc04874eb60f657a3ec508b[m
+Author: JTGrime <jtgrime@gmail.com>
+Date:   Tue Mar 12 00:14:56 2013 +0000
+
+    Adding Moq project dependencies to Data, Mobile and Web test projects.
+
+[33mcommit ad7d7b8d5bde49cc18c4e2f9c1dcfe12511af8be[m
+Author: JTGrime <jtgrime@gmail.com>
+Date:   Tue Mar 12 00:05:30 2013 +0000
+
+    Changing general stucture of the projects for future development plans.
+
+[33mcommit a658250a0562300107852e78b989b86931a7e0d0[m
+Author: JTGrime <jtgrime@gmail.com>
+Date:   Tue Mar 12 00:04:18 2013 +0000
+
+    Adding a premade .gitignore found online @ http://stackoverflow.com/questions/11050487/git-creating-a-gitignore-file.
+
+[33mcommit 4cb276d96b251a42c6322c542fe9fac2ca13b903[m
+Author: JTGrime <jtgrime@gmail.com>
+Date:   Tue Mar 12 00:00:53 2013 +0000
+
+    Adding .gitIgnore to negate the resharper directory added to the project
+
+[33mcommit dcfc20fdd7f4ef9aa1926047d34c480666756fae[m
+Author: JTGrime <jtgrime@gmail.com>
+Date:   Mon Mar 11 15:31:25 2013 +0000
+
+    Adding initial project Set up with Generic Repositories, however the actual solution structure is in a mercurial repository and I will be migrating the solution of the course of the week (2013-03-11).
+
+[33mcommit fc7620c8c383f97c695fe7105a5cdd10fdd69848[m
+Author: JTGrime <jtgrime@gmail.com>
+Date:   Wed Feb 13 14:30:33 2013 -0800
+
+    Initial commit
