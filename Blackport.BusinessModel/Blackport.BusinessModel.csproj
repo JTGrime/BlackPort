@@ -39,8 +39,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Account.cs" />
+    <Compile Include="AccountRole.cs" />
+    <Compile Include="API\IAccount.cs" />
+    <Compile Include="API\IPerson.cs" />
+    <Compile Include="API\ISuperType.cs" />
+    <Compile Include="EntityLayer\SuperType.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="API\ServiceAPI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Blackport.Infrastructure\Blackport.Infrastructure.csproj">
+      <Project>{1dd12afe-1fd6-485b-91e0-272818a53106}</Project>
+      <Name>Blackport.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

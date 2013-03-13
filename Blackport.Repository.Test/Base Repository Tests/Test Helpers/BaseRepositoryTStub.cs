@@ -10,10 +10,9 @@ namespace Blackport.Repository.Test.Base_Repository_Tests.Test_Helpers
 {
     internal sealed class BaseRepositoryTStub : IBaseRepositoryTStub
     {
-        private int                 _id;
+        private int									_id;
         private static int          _totalObjectCount;
         private BaseRepositoryTStub _instance;
-        private Func<int, int, int> _calculate;
         
         public BaseRepositoryTStub()
         {
@@ -41,7 +40,7 @@ namespace Blackport.Repository.Test.Base_Repository_Tests.Test_Helpers
 				{
 					if(func == null)
 					{
-							func = (xx, yy) => { return x + y; };
+							func = (xx, yy) => { return xx + yy; };
 					}
 					return func(x, y);
 				}

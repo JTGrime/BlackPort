@@ -53,6 +53,7 @@
     <Compile Include="DependencyResolver\DependencyRegistry.cs" />
     <Compile Include="EntityFramework\API\IDbContextWrapper.cs" />
     <Compile Include="EntityFramework\DbContextWrapper.cs" />
+    <Compile Include="EntityLayer\AccountModificationState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Web\API\IHttpContextAdapter.cs" />
     <Compile Include="Web\API\IQueryStringAdapter.cs" />

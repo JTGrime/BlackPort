@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Blackport.BusinessModel
 {
-    public class Class1
-    {
-    }
+		public enum AccountRole
+		{
+				Infant = 0,
+				Child,
+				Tennager,
+				Adult
+		}
 }
