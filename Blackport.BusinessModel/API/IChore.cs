@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Blackport.BusinessModel.API
 {
-	public interface IPerson
+	public interface IChore
 	{
-		string FirstName	{ get; set; }
-		string Surname		{ get; set; }
-		string DoB			{ get; set; }
 	}
 }

@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace Blackport.BusinessModel
 {
-	public class Person : SuperType, IPerson
+	public class Recurrence : SuperType, IRecurrence
 	{
-		public string FirstName { get; set; }
-		public string Surname	{ get; set; }
-		public string DoB		{ get; set; }
+		public DateTime				StartTime			{ get; set; }
+		public DateTime				EndTime				{ get; set; }
+		public IRecurrenceMetric	RecurrenceMetric	{ get; set; }
 	}
 }
